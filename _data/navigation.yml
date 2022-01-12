@@ -1,24 +1,21 @@
 # main links
 main:
   - title: "Posts"
-    url: /year-archive/
-  - title: "Categories"
-    url: /categories/
+    url: /year-archive-grid/
+  - title: "Algorithm"
+    url: /categories/algorithm/
+  - title: "Category"
+    url: /categories-grid/
   - title: "Tags"
     url: /tags/
-  - title: "Pages"
-    url: /page-archive/
-  - title: "Collections"
-    url: /collection-archive/
-  - title: "External Link"
-    url: https://google.com
+  - title: "Search"
+    url: /search/
 
-sidebar:
-  nav: "docs"
 docs:
-  - title: "Algorithm_study"
+  - title: "Algorithm study"
     children:
     - title: "Baekjoon"
+      url: /algorithm/baekjoon/
     - title: "Programmers"
       children:
       - title: "Level 1"
