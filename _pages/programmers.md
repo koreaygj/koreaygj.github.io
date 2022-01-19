@@ -1,7 +1,7 @@
 ---
 title: Programmers
-layout: tag
 permalink: /algorithm/programmers/
+layout: tag
 taxonomy: programmers
 entries_layout: grid
 sidebar:
