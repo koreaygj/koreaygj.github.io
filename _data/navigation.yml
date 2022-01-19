@@ -17,7 +17,4 @@ docs:
     - title: "Baekjoon"
       url: /algorithm/baekjoon/
     - title: "Programmers"
-      children:
-      - title: "Level 1"
-      - title: "Level 2"
-  
+      urL: /algorithm/programmers/
