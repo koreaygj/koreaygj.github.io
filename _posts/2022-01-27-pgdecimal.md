@@ -16,7 +16,7 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
 </script>
 
 #### 문제
-[![행렬의 곱셈](/assets/images/algorithm/programmers/Level 2/decimal/problem.jpg)](https://programmers.co.kr/learn/courses/30/lessons/42839)
+[![소수 찾기](/assets/images/algorithm/programmers/Level 2/decimal/problem.jpg)](https://programmers.co.kr/learn/courses/30/lessons/42839)
  
  -------
 
