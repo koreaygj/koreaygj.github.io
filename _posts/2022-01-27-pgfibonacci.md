@@ -8,7 +8,6 @@ tags:
  - level2
  - programmers
  - fibonacci
- - 
 sidebar:
  nav: "docs"
 ---
