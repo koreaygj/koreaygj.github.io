@@ -2,6 +2,7 @@
 title: "[프로그래머스] 피보나치 수"
 header:
  overlay_color: "#e9dcbe"
+ teaser: "/assets/images/algorithm/programmers/Level 2/fibonacci/problem.jpg"
 categories:
  - Algorithm
 tags:
@@ -14,6 +15,8 @@ sidebar:
 <script type="text/javascript" 
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
 </script>
+
+제귀함수를 이용하여서 피보나치 수를 구현해보는 문제이다. 난이도: 하
 
 #### 문제
 [![피보나치 수](/assets/images/algorithm/programmers/Level 2/fibonacci/problem.jpg)](https://programmers.co.kr/learn/courses/30/lessons/12945)

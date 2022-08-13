@@ -2,6 +2,7 @@
 title: "[프로그래머스] 프린터"
 header:
  overlay_color: "#e9dcbe"
+ teaser: "/assets/images/algorithm/programmers/Level 2/printer/problem.jpg"
 categories:
  - Algorithm
 tags:
@@ -14,6 +15,8 @@ sidebar:
 <script type="text/javascript" 
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
 </script>
+
+간단한 행렬의 곱셈 C++로 간단하게 구하는 문제이다.
 
 #### 문제
 [![행렬의 곱셈](/assets/images/algorithm/programmers/Level 2/printer/problem.jpg)](https://programmers.co.kr/learn/courses/30/lessons/42587)

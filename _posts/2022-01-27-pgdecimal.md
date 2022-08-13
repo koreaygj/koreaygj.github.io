@@ -2,6 +2,7 @@
 title: "[프로그래머스] 소수 찾기"
 header:
  overlay_color: "#e9dcbe"
+ teaser: "/assets/images/algorithm/programmers/Level 2/decimal/problem.jpg"
 categories:
  - Algorithm
 tags:
@@ -14,6 +15,8 @@ sidebar:
 <script type="text/javascript" 
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
 </script>
+
+간단하게 소수를 구해보는 로직을 구현 해보는 문제이다.
 
 #### 문제
 [![소수 찾기](/assets/images/algorithm/programmers/Level 2/decimal/problem.jpg)](https://programmers.co.kr/learn/courses/30/lessons/42839)
