@@ -1,28 +1,202 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-    <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-      {% if post.sitemap.changefreq == null %}
-        <changefreq>daily</changefreq>
-      {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% endif %}
 
-      {% if post.sitemap.priority == null %}
-          <priority>0.5</priority>
-      {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% endif %}
+<url>
+  <loc>https://koreaygj.github.io/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/year-archive-grid/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/categories/algorithm/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/categories-grid/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/tags/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/Sitemap/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/bj2042/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/bj1113/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/bj1713/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/bj1966/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/pgfibonacci/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/page2/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/baekjoon/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/programmers/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/pgdecimal/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/pgprinter/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/pgmatrix/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/algorithm/17298/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/blog-devel/Blog/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/404.html</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/category/edge-case/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/archive-layout-with-content/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/categories/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/collection-archive-grid/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/collection-archive/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/tags/markup-grid/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/tags/markup/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/page-a/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/page-archive-grid/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/page-archive/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/page-b/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/portfolio/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/post-archive-feature-rows/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/search/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/splash-page/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/tags-grid/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/terms/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://koreaygj.github.io/year-archive/</loc>
+  <lastmod>2022-08-13T04:54:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
-    </url>
-  {% endfor %}
+
 </urlset>
