@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://https://koreaygj.github.io/sitemap.xml
+Sitemap: https://koreaygj.github.io/sitemap.xml
