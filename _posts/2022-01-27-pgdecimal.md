@@ -1,7 +1,7 @@
 ---
 title: "[프로그래머스] 소수 찾기"
 header:
- teaser: "/assets/images/algorithm/programmers/Level 2/decimal/problem.jpg"
+ overlay_color: "#e9dcbe"
 categories:
  - Algorithm
 tags:
