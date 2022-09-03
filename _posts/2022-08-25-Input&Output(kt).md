@@ -55,14 +55,14 @@ fun main(){
 
  마지막으로 스캐너를 사용하는 방법도 있다. 자바에서는 보통 변수를 활용해서 사용하는데 kotlin에서는 with을 사용해서 바로 스캐너를 만들어서 사용하는 방법도 있다.
 
-```kotlin:java.kt
+```kotlin
 import java.util.*
 fun main(args: Array<String>){
     var input = Scanner(System.`in`)
 }
 ```
 
-```kotlin:kt_style.kt
+```kotlin
 import java.util.*
 fun main(args: Array<String>) = with(Scanner(System.`in`)) {
 }
