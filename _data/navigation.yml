@@ -19,5 +19,6 @@ docs:
     - title: "Programmers"
       url: /algorithm/programmers/
   - title: "Kotlin"
+    children:
     - title: "kotlin기본"
-      url: /kotlin/basic
+      url: /kotlin/basic/

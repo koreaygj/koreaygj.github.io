@@ -1,7 +1,7 @@
 ---
 title: Kotlin Basic
 layout: tag
-permalink: /kotlin/basic
+permalink: /kotlin/basic/
 taxonomy: ktbasic
 entries_layout: grid
 sidebar:
