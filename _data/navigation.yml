@@ -22,3 +22,9 @@ docs:
     children:
     - title: "kotlin기본"
       url: /kotlin/basic/
+  - title: "Devlop tools"
+    childern:
+    - title: "software"
+      url: /dev_tool/SW/
+    - title: "hardware"
+      url: /dev_tool/HW/
