@@ -1,6 +1,7 @@
 ---
 title: "Kotlin 입력과 출력"
 layout: posts
+realated: true
 comments: true
 categories:
  - kotlin
@@ -11,6 +12,7 @@ header:
  teaser: "https://images.velog.io/images/foxrain_gg/post/25771f3f-177d-48bd-a3e4-e4acab5be909/kotlin.png"
 tags:
  - ktbasic
+ - kotlin
 sidebar:
  nav: "docs"
 toc: true
@@ -26,7 +28,7 @@ toc: true
 fun main(){
     var name = readLine()   // 입력
     println(name)   //출력
-```kotlin
+```
 
  readLine()의 경우에는 어떠한 입력이든 String으로 입력받는다. 그래서 만약 입력받은 데이터를 원하는 자료형으로 변환하는 과정이 필수적이다. 이때 아래와 같은 코드를 통해 자료형을 바꾸어 입력받을 수 있다.
 
@@ -35,7 +37,7 @@ fun main(){
     var i:Int = readLine()!!.toInt()
     var d:Double = readLine()!!.toDouble()
 }
-```kotlin
+```
 
 -------
 
@@ -50,7 +52,7 @@ fun main(){
      val token - StringTokenizer(readLine())
      println(Integer.parseInt(token.nextToken()) + Integer.parseInt(token.nextToken()))
  }
-```kotlin
+```
 
 ------
 
@@ -63,13 +65,13 @@ import java.util.*
 fun main(args: Array<String>){
     var input = Scanner(System.`in`)
 }
-```kotlin
+```
 
 ```kotlin
 import java.util.*
 fun main(args: Array<String>) = with(Scanner(System.`in`)) {
 }
-```kotlin
+```
 ------
 
 #### Kotlin의 출력
@@ -81,4 +83,4 @@ fun main(){
     println("개행이 있는 출력")
     print("개행이 없는 출력")
 }
-```kotlin
+```
