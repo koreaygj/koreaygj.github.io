@@ -20,12 +20,13 @@ toc: true
 
  코틀린의 경우 3개의 방법으로 입력받을 수 있다.
 
-##### readLine()
+#### readLine()
+
 ```kotlin
 fun main(){
     var name = readLine()   // 입력
     println(name)   //출력
-```
+```kotlin
 
  readLine()의 경우에는 어떠한 입력이든 String으로 입력받는다. 그래서 만약 입력받은 데이터를 원하는 자료형으로 변환하는 과정이 필수적이다. 이때 아래와 같은 코드를 통해 자료형을 바꾸어 입력받을 수 있다.
 
@@ -34,11 +35,12 @@ fun main(){
     var i:Int = readLine()!!.toInt()
     var d:Double = readLine()!!.toDouble()
 }
-```
+```kotlin
 
 -------
 
-##### BufferedReader
+#### BufferedReader
+
  kotlin은 자바기반의 언어이기 때문에 BufferReader를 자바에서 사용하는 것처럼 사용할 수 있다.
 
 ```kotlin
@@ -48,11 +50,11 @@ fun main(){
      val token - StringTokenizer(readLine())
      println(Integer.parseInt(token.nextToken()) + Integer.parseInt(token.nextToken()))
  }
-```
+```kotlin
 
 ------
 
-##### Scanner
+#### Scanner
 
  마지막으로 스캐너를 사용하는 방법도 있다. 자바에서는 보통 변수를 활용해서 사용하는데 kotlin에서는 with을 사용해서 바로 스캐너를 만들어서 사용하는 방법도 있다.
 
@@ -61,16 +63,17 @@ import java.util.*
 fun main(args: Array<String>){
     var input = Scanner(System.`in`)
 }
-```
+```kotlin
 
 ```kotlin
 import java.util.*
 fun main(args: Array<String>) = with(Scanner(System.`in`)) {
 }
-```
+```kotlin
 ------
 
 #### Kotlin의 출력
+
  kotlin의 콘솔 출력에는 print, println을 사용한다.
 
 ```kotlin
@@ -78,4 +81,4 @@ fun main(){
     println("개행이 있는 출력")
     print("개행이 없는 출력")
 }
-```
+```kotlin
