@@ -1,6 +1,6 @@
 ---
 title: "Kotlin 입력과 출력"
-layout: splash
+layout: posts
 comments: true
 categories:
  - kotlin
