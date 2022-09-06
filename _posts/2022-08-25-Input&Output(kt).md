@@ -8,6 +8,7 @@ header:
  overlay_color: "#e9dcbe"
  overlay_filter: "0.5"
  overlay_image: "https://images.velog.io/images/foxrain_gg/post/25771f3f-177d-48bd-a3e4-e4acab5be909/kotlin.png"
+ teaser: ""https://images.velog.io/images/foxrain_gg/post/25771f3f-177d-48bd-a3e4-e4acab5be909/kotlin.png"
 tags:
  - ktbasic
 sidebar:
