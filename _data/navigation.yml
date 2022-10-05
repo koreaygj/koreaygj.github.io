@@ -24,7 +24,7 @@ docs:
       url: /kotlin/basic/
   - title: "Go"
     children:
-    - title: "Go기본"
+    - title: "go기본"
       url: /go/basic/
   - title: "Devlop tools"
     childern:

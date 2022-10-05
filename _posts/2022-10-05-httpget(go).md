@@ -2,7 +2,7 @@
 title: "[Go]http GET 정리"
 comments: true
 categories:
- - gobasic
+ - go
 header:
  overlay_color: "#e9dcbe"
  overlay_filter: "0.5"
