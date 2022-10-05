@@ -22,6 +22,10 @@ docs:
     children:
     - title: "kotlin기본"
       url: /kotlin/basic/
+  - title: "Go"
+    children:
+    - title: "Go기본"
+      url: /kotlin/basic/
   - title: "Devlop tools"
     childern:
     - title: "software"
