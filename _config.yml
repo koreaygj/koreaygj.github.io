@@ -60,14 +60,14 @@ atom_feed:
   hide                   : # true, false (default)
 search                   : true # true, false (default)
 search_full_content      :  # true, false (default)
-search_provider          :  # lunr (default), algolia, google
+search_provider          :  naver # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
-  search_engine_id       : "b6acea153486a6371" # YOUR_SEARCH_ENGINE_ID
+  search_engine_id       : b6acea153486a6371 # YOUR_SEARCH_ENGINE_ID
   instant_search         : true # false (default), true
 # SEO Related
 google_site_verification :
@@ -209,7 +209,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -277,6 +277,8 @@ defaults:
       path: ""
       type: posts
     values:
+      show_date: true
+      data_format: "%Y-%m-%d"
       layout: single
       comments: true
       author_profile: true
