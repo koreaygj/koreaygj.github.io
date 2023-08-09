@@ -3,6 +3,7 @@ title: "[프로그래머스] 프린터"
 header:
  overlay_color: "#e9dcbe"
  teaser: "/assets/images/algorithm/programmers/Level 2/printer/problem.jpg"
+ overlay_image: "https://s3.ap-northeast-2.amazonaws.com/grepp-cloudfront/programmers_imgs/design/logo.jpg"
 categories:
  - Algorithm
 tags:
