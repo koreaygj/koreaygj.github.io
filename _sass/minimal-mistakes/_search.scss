@@ -68,11 +68,11 @@
     font-size: $type-size-3;
 
     @include breakpoint($large) {
-      font-size: $type-size-2;
+      font-size: $type-size-3;
     }
 
     @include breakpoint($x-large) {
-      font-size: $type-size-1;
+      font-size: $type-size-3;
     }
   }
 
