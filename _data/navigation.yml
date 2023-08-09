@@ -12,23 +12,25 @@ main:
     url: /Sitemap/
 
 docs:
-  - title: "Algorithm study"
+  - title: "Algorithm"
+    url: /categories/algorithm/
     children:
     - title: "Baekjoon"
       url: /algorithm/baekjoon/
     - title: "Programmers"
       url: /algorithm/programmers/
+  - title: "자료구조"
+    url: /categories/data_structure/
+    children:
+    - title: "C++"
+      url: /data_structure/cpp/
   - title: "Kotlin"
+    url: /categories/kotlin/
     children:
     - title: "kotlin기본"
       url: /kotlin/basic/
   - title: "Go"
+    url: /categories/go/
     children:
     - title: "go기본"
       url: /go/basic/
-  - title: "Devlop tools"
-    childern:
-    - title: "software"
-      url: /dev_tool/SW/
-    - title: "hardware"
-      url: /dev_tool/HW/

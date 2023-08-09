@@ -8,4 +8,3 @@ sidebar:
  nav: "docs"
 ---
 
-Sample post listing for the category `Algorithm`.
