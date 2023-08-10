@@ -19,18 +19,20 @@ docs:
       url: /algorithm/baekjoon/
     - title: "Programmers"
       url: /algorithm/programmers/
+  - title: "DB"
+    url: /categories/DB
+    children:
+    - title: "mysql"
+      url: /DB/mysql
+  - title: "Basic language"
+    children:
+    - title: "Java"
+      url: /categories/java/
+    - title: "Kotlin"
+      url: /categories/kotlin/
+    - title: "Go"
+      url: /categories/go/
+    - title: "C++"
+      url: /categories/cpp/
   - title: "자료구조"
     url: /categories/data_structure/
-    children:
-    - title: "C++"
-      url: /data_structure/cpp/
-  - title: "Kotlin"
-    url: /categories/kotlin/
-    children:
-    - title: "kotlin기본"
-      url: /kotlin/basic/
-  - title: "Go"
-    url: /categories/go/
-    children:
-    - title: "go기본"
-      url: /go/basic/
