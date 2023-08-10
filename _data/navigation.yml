@@ -2,14 +2,10 @@
 main:
   - title: "Posts"
     url: /year-archive-grid/
-  - title: "Algorithm"
-    url: /categories/algorithm/
   - title: "Category"
     url: /categories-grid/
   - title: "Tags"
     url: /tags/
-  - title: "Sitemap"
-    url: /Sitemap/
 
 docs:
   - title: "Algorithm"
