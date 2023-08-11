@@ -7,9 +7,9 @@
 
 /* korean fonts */
 
-@import url('https://fonts.googleapis.com/css2? family= Nanum+Gothic+Coding & display=swap');
-
-@import .page__lead{
-    font-family: $global-font-family;
-    font-size: $type-size-4;
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
