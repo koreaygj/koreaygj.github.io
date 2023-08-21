@@ -15,11 +15,19 @@ docs:
       url: /algorithm/baekjoon/
     - title: "Programmers"
       url: /algorithm/programmers/
-  - title: "DB"
-    url: /categories/DB
+  - title: "CS"
+    url: /categories/CS/
     children:
-    - title: "mysql"
-      url: /DB/mysql
+    - title: "OS"
+      url: /CS/OS/
+    - title: "Network"
+      url: /CS/network/
+    - title: "자료구조"
+      url: /CS/data_structure/
+    - title: "컴퓨터구조"
+      url: /CS/computer_structure/
+    - title: "DB"
+      url: /CS/DB/
   - title: "Basic language"
     children:
     - title: "Java"
@@ -30,5 +38,3 @@ docs:
       url: /categories/go/
     - title: "C++"
       url: /categories/cpp/
-  - title: "자료구조"
-    url: /categories/data_structure/

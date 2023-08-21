@@ -2,14 +2,15 @@
 title: "[자료구조]Segment Tree(c++)"
 comments: true
 categories:
- - data_structure
+ - CS
 header:
  overlay_color: "#e9dcbe"
  overlay_filter: "0.5"
  overlay_image: "/assets/images/bannerimage/cpp-logo.png"
  teaser: "/assets/images/bannerimage/cpp-logo.png"
 tags:
- - ds_cpp
+ - data_structure
+ - cpp
 sidebar:
  nav: "docs"
 toc: true

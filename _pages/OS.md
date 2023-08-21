@@ -1,8 +1,8 @@
 ---
-title: "DB"
+title: "OS"
 layout: tag
-permalink: /CS/DB/
-taxonomy: DB
+permalink: /CS/OS/
+taxonomy: OS
 entries_layout: grid
 sidebar:
  nav: "docs"

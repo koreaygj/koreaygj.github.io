@@ -1,8 +1,8 @@
 ---
-title: "DB"
+title: "network"
 layout: tag
-permalink: /CS/DB/
-taxonomy: DB
+permalink: /CS/network
+taxonomy: network
 entries_layout: grid
 sidebar:
  nav: "docs"
