@@ -1,12 +1,11 @@
 ---
 title: "[sql]Select 문법 정리"
-comments: true
 categories:
  - CS
 header:
+ overlay_image: "https://logosdownload.com/logo/mysql-logo-1024.png"
  overlay_filter: "0.5"
- overlay_image: "https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-sql.ff87215b43fd7292af172e2a5d9b844217262571.png"
- teaser: "https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-sql.ff87215b43fd7292af172e2a5d9b844217262571.png"
+ teaser: "https://logosdownload.com/logo/mysql-logo-1024.png"
 tags:
  - sql
  - DB
@@ -54,13 +53,16 @@ SELECT  gender,
     BY gender;
 ```
 ### having 
-집계조건
+Group by를 통해 묶인 레코드 그룹에 대해 조건을 거는 역할이다. where과는 비슷하지만 `그룹화되어진 테이블에서 조건에 만족하는 값을 필터링`해준다.
 ### order by
-정렬
-
-![](https://velog.velcdn.com/images/koreaygj/post/27f5eb4d-d0b9-4f25-a6a5-ef730fa7cb9b/image.png)
-이때 node에 합을 넣게 된다면, 필요한 구간 합을 구할 수 있다. 예를 들어 index값이 2~4에 해당하는 구간 합을 구하고자 할 때, a[2] 와 a[3] + a[4]에 해당하는 노드값의 합을 재귀의 형식으로 풀이할 수 있다. 
-
+테이블을 조회할 때 결과를 정렬하는 방식을 정한다. 기본적으로 order by 뒤에 아무것도 적지 않으면 오름차순으로 정렬이 된다. 오름차순은 `ASC`, 내림차순은 `DESC`를 키워드로 가지고 있다. 
+추가적으로 정렬기준을 한개 이상 정하고 싶을 때는 간단하게 `,`뒤에 원하는 만큼 붙일 수 있다. 이때 정렬 우선순위는 앞에서 부터 뒤로 이루어진다.
+```sql
+select *
+  from employee
+ order
+    by salary desc, employee_id; // salary를 내림차순으로 정렬하되 같을 때에 employee_id를 오름차순으로 정렬한다.
+```
 
 
 참고 출처 
