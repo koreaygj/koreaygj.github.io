@@ -28,6 +28,8 @@ docs:
       url: /CS/computer_structure/
     - title: "DB"
       url: /CS/DB/
+    - title: "Git"
+      url: /CS/git/
   - title: "Basic language"
     children:
     - title: "Java"
