@@ -80,7 +80,7 @@ VPN의 경우는 일반적인 경우와 달리 Virtual NIC(Network Interface Car
   > <br>
   > 도착지의 IP: 실제 내부망에 도착해야하는 IP
 
-<img src="/assets/images/Network/VPN/PS2.png)">
+<img src="/assets/images/Network/VPN/PS2.png">
 
 - Outer IP
   이러한패킷이 다시 IP -> Driver 를 거쳐서 실질적인 NIC(Network Interface Card)로 도착했을때 앞에서와 마찬가지로 IP헤더, TCP, 데이터를 암호화(캡슐화)하고 두번째 IP 헤더를 붙인다.
