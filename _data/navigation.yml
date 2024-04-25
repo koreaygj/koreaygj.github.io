@@ -7,38 +7,38 @@ main:
   - title: "Tags"
     url: /tags/
   - title: "Search"
- url: "/search/"
+    url: "/search/"
 
 docs:
   - title: "Algorithm"
     url: /categories/algorithm/
     children:
-    - title: "Baekjoon"
-      url: /algorithm/baekjoon/
-    - title: "Programmers"
-      url: /algorithm/programmers/
+      - title: "Baekjoon"
+        url: /algorithm/baekjoon/
+      - title: "Programmers"
+        url: /algorithm/programmers/
   - title: "CS"
     url: /categories/CS/
     children:
-    - title: "OS"
-      url: /CS/OS/
-    - title: "Network"
-      url: /CS/network/
-    - title: "자료구조"
-      url: /CS/data_structure/
-    - title: "컴퓨터구조"
-      url: /CS/computer_structure/
-    - title: "DB"
-      url: /CS/DB/
-    - title: "Git"
-      url: /CS/git/
+      - title: "OS"
+        url: /CS/OS/
+      - title: "Network"
+        url: /CS/network/
+      - title: "자료구조"
+        url: /CS/data_structure/
+      - title: "컴퓨터구조"
+        url: /CS/computer_structure/
+      - title: "DB"
+        url: /CS/DB/
+      - title: "Git"
+        url: /CS/git/
   - title: "Basic language"
     children:
-    - title: "Java"
-      url: /categories/java/
-    - title: "Kotlin"
-      url: /categories/kotlin/
-    - title: "Go"
-      url: /categories/go/
-    - title: "C++"
-      url: /categories/cpp/
+      - title: "Java"
+        url: /categories/java/
+      - title: "Kotlin"
+        url: /categories/kotlin/
+      - title: "Go"
+        url: /categories/go/
+      - title: "C++"
+        url: /categories/cpp/
