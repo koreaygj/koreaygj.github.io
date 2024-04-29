@@ -13,6 +13,7 @@ tags:
 sidebar:
   nav: docs
 toc: true
+toc_sticky: true
 ---
 
 IPsec VPN에 대해 알아보자...
