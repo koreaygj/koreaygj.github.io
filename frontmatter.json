@@ -7,41 +7,63 @@
       "previewPath": null,
       "fields": [
         {
-          "title": "Title",
+          "title": "title",
           "name": "title",
           "type": "string"
         },
         {
-          "title": "Description",
-          "name": "description",
-          "type": "string"
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
         },
         {
-          "title": "Publishing date",
-          "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
+          "title": "header",
+          "name": "header",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "overlay_image",
+              "name": "overlay_image",
+              "type": "image"
+            },
+            {
+              "title": "overlay_filter",
+              "name": "overlay_filter",
+              "type": "datetime"
+            },
+            {
+              "title": "teaser",
+              "name": "teaser",
+              "type": "string"
+            }
+          ]
         },
         {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
-        },
-        {
-          "title": "Is in draft",
-          "name": "draft",
-          "type": "draft"
-        },
-        {
-          "title": "Tags",
+          "title": "tags",
           "name": "tags",
           "type": "tags"
         },
         {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
+          "title": "sidebar",
+          "name": "sidebar",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "nav",
+              "name": "nav",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "title": "toc",
+          "name": "toc",
+          "type": "boolean"
+        },
+        {
+          "title": "toc_sticky",
+          "name": "toc_sticky",
+          "type": "boolean"
         }
       ]
     }
