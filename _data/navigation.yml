@@ -42,3 +42,8 @@ docs:
         url: /categories/go/
       - title: "C++"
         url: /categories/cpp/
+  - title: "Reviews"
+    url: /reviews
+    children:
+      - title: "9oormthon Training"
+        url: /reviews/groomthon/
