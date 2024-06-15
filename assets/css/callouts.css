@@ -1,0 +1,86 @@
+/* 기본 Callout 스타일 */
+.callout {
+  border-left: 4px solid;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Note 스타일 */
+.callout-note {
+  border-left-color: #007acc;
+  background-color: #e7f3ff;
+}
+
+/* Abstract 스타일 */
+.callout-abstract {
+  border-left-color: #6fcf97;
+  background-color: #e8f8f0;
+}
+
+/* Info 스타일 */
+.callout-info {
+  border-left-color: #2d9cdb;
+  background-color: #e7f3ff;
+}
+
+/* Todo 스타일 */
+.callout-todo {
+  border-left-color: #2d9cdb;
+  background-color: #e7f3ff;
+}
+
+/* Tip 스타일 */
+.callout-tip {
+  border-left-color: #6fcf97;
+  background-color: #e8f8f0;
+}
+
+/* Success 스타일 */
+.callout-success {
+  border-left-color: #27ae60;
+  background-color: #e8f8f0;
+}
+
+/* Question 스타일 */
+.callout-question {
+  border-left-color: #f2994a;
+  background-color: #fff5e5;
+}
+
+/* Warning 스타일 */
+.callout-warning {
+  border-left-color: #f2c94c;
+  background-color: #fff5e5;
+}
+
+/* Failure 스타일 */
+.callout-failure {
+  border-left-color: #eb5757;
+  background-color: #ffe5e5;
+}
+
+/* Danger 스타일 */
+.callout-danger {
+  border-left-color: #eb5757;
+  background-color: #ffe5e5;
+}
+
+/* Bug 스타일 */
+.callout-bug {
+  border-left-color: #eb5757;
+  background-color: #ffe5e5;
+}
+
+/* Example 스타일 */
+.callout-example {
+  border-left-color: #9b51e0;
+  background-color: #f4e5ff;
+}
+
+/* Quote 스타일 */
+.callout-quote {
+  border-left-color: #b0b0b0;
+  background-color: #f9f9f9;
+}
