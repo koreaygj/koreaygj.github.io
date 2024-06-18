@@ -21,7 +21,7 @@
 
 /* Info 스타일 */
 .callout-info {
-  border-left-color: #2d9cdb;
+  border-left-color: #47a7df;
   background-color: #e7f3ff;
 }
 
@@ -39,19 +39,19 @@
 
 /* Success 스타일 */
 .callout-success {
-  border-left-color: #27ae60;
+  border-left-color: #46b675;
   background-color: #e8f8f0;
 }
 
 /* Question 스타일 */
 .callout-question {
-  border-left-color: #f2994a;
+  border-left-color: #f3a968;
   background-color: #fff5e5;
 }
 
 /* Warning 스타일 */
 .callout-warning {
-  border-left-color: #f2c94c;
+  border-left-color: #f4d67c;
   background-color: #fff5e5;
 }
 
@@ -75,7 +75,7 @@
 
 /* Example 스타일 */
 .callout-example {
-  border-left-color: #9b51e0;
+  border-left-color: #c08bf3;
   background-color: #f4e5ff;
 }
 
