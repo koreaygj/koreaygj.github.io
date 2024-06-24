@@ -1,86 +1,247 @@
+/* 색상 변수 정의 */
+:root {
+  --callout-border-color: #30363d;
+  --callout-background-color: #2d333b;
+  --callout-text-color: #c9d1d9;
+  --callout-header-background-color: #0d1117;
+  --callout-content-background-color: #161b22;
+
+  --callout-note-color: #58a6ff;
+  --callout-abstract-color: #34d058;
+  --callout-info-color: #79b8ff;
+  --callout-todo-color: #2d9cdb;
+  --callout-tip-color: #34d058;
+  --callout-success-color: #28a745;
+  --callout-question-color: #ffab70;
+  --callout-warning-color: #f4d67c;
+  --callout-failure-color: #ff6a6a;
+  --callout-danger-color: #ff6a6a;
+  --callout-bug-color: #ff6a6a;
+  --callout-example-color: #d2a8ff;
+  --callout-quote-color: #8b949e;
+}
+
 /* 기본 Callout 스타일 */
 .callout {
-  border-left: 4px solid;
-  padding: 10px;
+  border: 1px solid var(--callout-border-color);
   margin: 20px 0;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: var(--callout-background-color);
+  color: var(--callout-text-color);
+  position: relative;
+  font-family: Arial, sans-serif;
 }
 
-/* Note 스타일 */
+/* 상단 바 스타일 */
+.callout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--callout-header-background-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bold;
+}
+
+/* 제목 스타일 */
+.callout-header strong {
+  font-size: 1.1em;
+}
+
+/* 아이콘 스타일 */
+.callout-header .icon {
+  font-size: 1.2em;
+}
+
+/* 내용 스타일 */
+.callout-content {
+  padding: 10px 20px; /* 본문에도 패딩 적용 */
+  background-color: var(--callout-content-background-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 16px;
+}
+
+/* 각 callout 스타일 */
 .callout-note {
-  border-left-color: #007acc;
-  background-color: #e7f3ff;
+  border-color: var(--callout-note-color);
 }
 
-/* Abstract 스타일 */
+.callout-note .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-note-color); /* 점선 색상 */
+}
+
+.callout-note .callout-header strong,
+.callout-note .callout-header .icon {
+  color: var(--callout-note-color);
+}
+
 .callout-abstract {
-  border-left-color: #6fcf97;
-  background-color: #e8f8f0;
+  border-color: var(--callout-abstract-color);
 }
 
-/* Info 스타일 */
+.callout-abstract .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-abstract-color); /* 점선 색상 */
+}
+
+.callout-abstract .callout-header strong,
+.callout-abstract .callout-header .icon {
+  color: var(--callout-abstract-color);
+}
+
 .callout-info {
-  border-left-color: #47a7df;
-  background-color: #e7f3ff;
+  border-color: var(--callout-info-color);
 }
 
-/* Todo 스타일 */
+.callout-info .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-info-color); /* 점선 색상 */
+}
+
+.callout-info .callout-header strong,
+.callout-info .callout-header .icon {
+  color: var(--callout-info-color);
+}
+
 .callout-todo {
-  border-left-color: #2d9cdb;
-  background-color: #e7f3ff;
+  border-color: var(--callout-todo-color);
 }
 
-/* Tip 스타일 */
+.callout-todo .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-todo-color); /* 점선 색상 */
+}
+
+.callout-todo .callout-header strong,
+.callout-todo .callout-header .icon {
+  color: var(--callout-todo-color);
+}
+
 .callout-tip {
-  border-left-color: #6fcf97;
-  background-color: #e8f8f0;
+  border-color: var(--callout-tip-color);
 }
 
-/* Success 스타일 */
+.callout-tip .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-tip-color); /* 점선 색상 */
+}
+
+.callout-tip .callout-header strong,
+.callout-tip .callout-header .icon {
+  color: var(--callout-tip-color);
+}
+
 .callout-success {
-  border-left-color: #46b675;
-  background-color: #e8f8f0;
+  border-color: var(--callout-success-color);
 }
 
-/* Question 스타일 */
+.callout-success .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-success-color); /* 점선 색상 */
+}
+
+.callout-success .callout-header strong,
+.callout-success .callout-header .icon {
+  color: var(--callout-success-color);
+}
+
 .callout-question {
-  border-left-color: #f3a968;
-  background-color: #fff5e5;
+  border-color: var(--callout-question-color);
 }
 
-/* Warning 스타일 */
+.callout-question .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-question-color); /* 점선 색상 */
+}
+
+.callout-question .callout-header strong,
+.callout-question .callout-header .icon {
+  color: var(--callout-question-color);
+}
+
 .callout-warning {
-  border-left-color: #f4d67c;
-  background-color: #fff5e5;
+  border-color: var(--callout-warning-color);
 }
 
-/* Failure 스타일 */
+.callout-warning .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-warning-color); /* 점선 색상 */
+}
+
+.callout-warning .callout-header strong,
+.callout-warning .callout-header .icon {
+  color: var(--callout-warning-color);
+}
+
 .callout-failure {
-  border-left-color: #eb5757;
-  background-color: #ffe5e5;
+  border-color: var(--callout-failure-color);
 }
 
-/* Danger 스타일 */
+.callout-failure .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-failure-color); /* 점선 색상 */
+}
+
+.callout-failure .callout-header strong,
+.callout-failure .callout-header .icon {
+  color: var(--callout-failure-color);
+}
+
 .callout-danger {
-  border-left-color: #eb5757;
-  background-color: #ffe5e5;
+  border-color: var(--callout-danger-color);
 }
 
-/* Bug 스타일 */
+.callout-danger .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-danger-color); /* 점선 색상 */
+}
+
+.callout-danger .callout-header strong,
+.callout-danger .callout-header .icon {
+  color: var(--callout-danger-color);
+}
+
 .callout-bug {
-  border-left-color: #eb5757;
-  background-color: #ffe5e5;
+  border-color: var(--callout-bug-color);
 }
 
-/* Example 스타일 */
+.callout-bug .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-bug-color); /* 점선 색상 */
+}
+
+.callout-bug .callout-header strong,
+.callout-bug .callout-header .icon {
+  color: var(--callout-bug-color);
+}
+
 .callout-example {
-  border-left-color: #c08bf3;
-  background-color: #f4e5ff;
+  border-color: var(--callout-example-color);
 }
 
-/* Quote 스타일 */
+.callout-example .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-example-color); /* 점선 색상 */
+}
+
+.callout-example .callout-header strong,
+.callout-example .callout-header .icon {
+  color: var(--callout-example-color);
+}
+
 .callout-quote {
-  border-left-color: #b0b0b0;
-  background-color: #f9f9f9;
+  border-color: var(--callout-quote-color);
+}
+
+.callout-quote .callout-header {
+  background-color: var(--callout-header-background-color);
+  border-bottom: 1px dashed var(--callout-quote-color); /* 점선 색상 */
+}
+
+.callout-quote .callout-header strong,
+.callout-quote .callout-header .icon {
+  color: var(--callout-quote-color);
 }
