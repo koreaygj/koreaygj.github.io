@@ -66,6 +66,7 @@ pre code {
 code {
   background-color: lighten($code-background-color, 20%);
   color: $base03; /* 텍스트 색상을 기본 텍스트 색상으로 변경 */
+  font-weight: bold;
   padding: 2px 4px;
   border-radius: 3px;
 }
