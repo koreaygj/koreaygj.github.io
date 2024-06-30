@@ -1,5 +1,5 @@
 ---
-title: "[구름톤 트레이닝 회고] Final project(Polaroad) 기획 및 진행"
+title: "[구름톤 트레이닝 풀스택 3기] Final project(Polaroad) 기획 및 진행"
 categories:
   - Review
 header:

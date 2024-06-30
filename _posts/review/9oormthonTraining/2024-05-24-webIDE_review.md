@@ -1,5 +1,5 @@
 ---
-title: "[구름톤 트레이닝 회고] Web IDE 마무리 회고"
+title: "[구름톤 트레이닝 풀스택 3기] Web IDE 마무리 회고"
 categories:
   - Review
 header:
