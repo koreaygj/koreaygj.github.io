@@ -13,7 +13,7 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 2;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -126,6 +126,7 @@ blockquote {
 /* links */
 
 a {
+  text-decoration: none;
   &:focus {
     @extend %tab-focus;
   }
@@ -357,12 +358,11 @@ input[type="submit"],
   transition: $global-transition;
 }
 
-
 /* Global image caption */
 
 img + em {
   display: block;
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: light-grey;
 }
