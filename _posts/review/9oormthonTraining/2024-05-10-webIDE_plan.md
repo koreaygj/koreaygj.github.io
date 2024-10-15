@@ -13,6 +13,8 @@ tags:
   - 구름톤
   - 9oormTraining
   - plan
+  - deepdive
+  - 딥다이브
 sidebar:
   nav: "docs"
 toc: true
