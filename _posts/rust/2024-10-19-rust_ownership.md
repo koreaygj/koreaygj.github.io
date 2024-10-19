@@ -4,10 +4,9 @@ comments: true
 categories:
   - rust
 header:
-  overlay_color: "#e9dcbe"
-  overlay_filter: "0.5"
-  overlay_image: "https://m.com-magazin.de/img/1/5/8/6/6/7/8/20210726UmgangMitJava_teas_quelleOracleCom_w1200_h629.jpg"
-  teaser: "https://m.com-magazin.de/img/1/5/8/6/6/7/8/20210726UmgangMitJava_teas_quelleOracleCom_w1200_h629.jpg"
+  overlay_filter: "0.8"
+  overlay_image: "https://raw.githubusercontent.com/rust-lang/www.rust-lang.org/master/static/images/rust-social-wide-dark.svg"
+  teaser: "https://raw.githubusercontent.com/rust-lang/www.rust-lang.org/master/static/images/rust-social-wide-dark.svg"
 tags:
   - rust
   - ownership
