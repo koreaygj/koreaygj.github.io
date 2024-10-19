@@ -1,12 +1,12 @@
 /* ==========================================================================
-   Custom GitHub Dark Mode Theme
+   Custom GitHub Dark Mode Theme - Improved Contrast
    ========================================================================== */
 
 /* Colors */
 $dark-gray: #24292e !default;
 $background-color: #0d1117 !default;
-$text-color: #c9d1d9 !default;
-$muted-text-color: lighten($dark-gray, 40%) !default;
+$text-color: #e6edf3 !default; /* 기존보다 밝은 텍스트 색상 */
+$muted-text-color: #8b949e !default; /* 기존 dark-gray을 대체한 연한 회색 */
 $primary-color: #58a6ff !default;
 $border-color: #30363d !default;
 $code-background-color: #161b22 !default;
@@ -17,57 +17,57 @@ $link-color: $primary-color !default;
 $link-color-hover: darken($primary-color, 10%) !default;
 $link-color-visited: lighten($primary-color, 10%) !default;
 $masthead-link-color: $text-color !default;
-$masthead-link-color-hover: lighten($text-color, 20%) !default;
+$masthead-link-color-hover: lighten($text-color, 10%) !default;
 $navicon-link-color-hover: lighten($background-color, 10%) !default;
 
 /* notices */
 $notice-background-mix: 75% !default;
 
 /* Custom GitHub Dark Mode syntax highlighting (base16) */
-$base00: #0d1117 !default; /* Default Background */
-$base01: #161b22 !default; /* Lighter Background (Used for status bars, line number and folding marks) */
-$base02: #21262d !default; /* Selection Background */
-$base03: #30363d !default; /* Comments, Invisibles, Line Highlighting */
-$base04: #6a737d !default; /* Dark Foreground (Used for status bars) */
-$base05: #c9d1d9 !default; /* Default Foreground, Caret, Delimiters, Operators */
-$base06: #8b949e !default; /* Light Foreground (Not often used) */
-$base07: #58a6ff !default; /* Light Background (Not often used) */
-$base08: #d35c56 !default; /* Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
-$base09: #b42b29 !default; /* Integers, Boolean, Constants, XML Attributes, Markup Link Url */
-$base0a: #d29922 !default; /* Classes, Markup Bold, Search Text Background */
-$base0b: #3fb950 !default; /* Strings, Inherited Class, Markup Code, Diff Inserted */
-$base0c: #1f6feb !default; /* Support, Regular Expressions, Escape Characters, Markup Quotes */
-$base0d: #58a6ff !default; /* Functions, Methods, Attribute IDs, Headings */
-$base0e: #bf4b8a !default; /* Keywords, Storage, Selector, Markup Italic, Diff Changed */
-$base0f: #f85149 !default; /* Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
-*/
+$base00: #0d1117 !default;
+$base01: #161b22 !default;
+$base02: #21262d !default;
+$base03: #8b949e !default; /* 주석을 연한 회색으로 수정 */
+$base04: #9ca3af !default; /* 중간 회색 */
+$base05: #f0f6fc !default; /* 기본 텍스트 색상을 더 밝게 조정 */
+$base06: #b1bac4 !default; /* 연한 회색 */
+$base07: #58a6ff !default;
+$base08: #ff7b72 !default; /* Variables, XML Tags */
+$base09: #f85149 !default;
+$base0a: #d29922 !default;
+$base0b: #3fb950 !default;
+$base0c: #39c5cf !default;
+$base0d: #58a6ff !default;
+$base0e: #bf4b8a !default;
+$base0f: #ffae34 !default;
 
 /* Code block styling */
 pre {
   background-color: darken($code-background-color, 20%);
-  color: $base05; /* 텍스트 색상을 기본 텍스트 색상으로 변경 */
+  color: $base05; /* 기본 텍스트 색상을 밝게 조정 */
   border: 1px solid $border-color;
   border-radius: 5px;
-  padding: 15px; /* 패딩을 더 여유있게 조정 */
+  padding: 15px;
   display: block;
   overflow-x: auto;
-  line-height: 1.5; /* 가독성을 위한 라인 높이 조정 */
-  white-space: pre; /* 줄바꿈을 유지하고, 스크롤을 허용 */
-  position: relative; /* ::before 및 ::after 가상 요소를 위해 상대 위치 설정 */
+  line-height: 1.5;
+  white-space: pre;
+  position: relative;
 }
 
 /* 코드 블럭 내부의 코드 요소에 대한 스타일 */
 pre code {
-  background-color: transparent; /* 배경색 제거 */
-  padding: 0; /* 패딩 제거 */
+  background-color: transparent;
+  padding: 0;
 }
 
 /* 인라인 코드 스타일링 */
 code {
-  background-color: lighten($code-background-color, 20%);
-  color: $base03; /* 텍스트 색상을 기본 텍스트 색상으로 변경 */
-  font-weight: bold;
+  background-color: lighten($code-background-color, 10%);
+  color: $base05;
+  font-size: 0.9em;
   padding: 2px 4px;
+  font-weight: bold;
   border-radius: 3px;
 }
 
