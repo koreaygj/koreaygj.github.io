@@ -34,6 +34,8 @@ docs:
         url: /CS/git/
   - title: "Basic language"
     children:
+      - title: "Rust"
+        url: /categories/rust/
       - title: "Java"
         url: /categories/java/
       - title: "Kotlin"
