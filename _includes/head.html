@@ -1,68 +1,6 @@
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- SEO tags -->
-{% include seo.html %}
-
-<!-- 기본 메타 데이터 -->
-<meta
-  name="description"
-  content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-/>
-<meta
-  name="author"
-  content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}"
-/>
-<meta
-  name="keywords"
-  content="{% if page.tags %}{{ page.tags | join: ', ' }}{% else %}{{ site.keywords }}{% endif %}"
-/>
-
-<!-- Open Graph 태그 -->
-<meta
-  property="og:type"
-  content="{% if page.date %}article{% else %}website{% endif %}"
-/>
-<meta
-  property="og:title"
-  content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
-/>
-<meta
-  property="og:description"
-  content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-/>
-<meta
-  property="og:url"
-  content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
-/>
-<meta property="og:site_name" content="{{ site.title }}" />
-{% if page.image %}
-<meta property="og:image" content="{{ site.url }}{{ page.image }}" />
-{% else %}
-<meta property="og:image" content="{{ site.url }}{{ site.default_og_image }}" />
-{% endif %}
-
-<!-- Twitter Card 태그 -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta
-  name="twitter:title"
-  content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
-/>
-<meta
-  name="twitter:description"
-  content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-/>
-{% if page.image %}
-<meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
-{% else %}
-<meta
-  name="twitter:image"
-  content="{{ site.url }}{{ site.default_og_image }}"
-/>
-{% endif %}
-
-<!-- RSS Feed -->
-{% unless site.atom_feed.hide %}
+{% include seo.html %} {% unless site.atom_feed.hide %}
 <link
   href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"
   type="application/atom+xml"
@@ -71,12 +9,15 @@
 />
 {% endunless %}
 
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <script>
   document.documentElement.className =
     document.documentElement.className.replace(/\bno-js\b/g, "") + " js ";
 </script>
 
-<!-- Stylesheets -->
+<!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 <link
   rel="preload"
@@ -84,17 +25,15 @@
   as="style"
   onload="this.onload=null;this.rel='stylesheet'"
 />
-<noscript>
-  <link
+<noscript
+  ><link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
-  />
-</noscript>
+/></noscript>
 
-<!-- Additional Scripts -->
 {% if site.head_scripts %} {% for script in site.head_scripts %}
 <script src="{{ script | relative_url }}"></script>
 {% endfor %} {% endif %}
 
-<!-- Obsidian Callout Styles -->
+<!-- for obsidian callout styles -->
 <link rel="stylesheet" href="{{ '/assets/css/callout.css' | relative_url }}" />
