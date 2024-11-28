@@ -36,16 +36,12 @@ docs:
     children:
       - title: "Rust"
         url: /categories/rust/
-      - title: "Java"
-        url: /categories/java/
-      - title: "Kotlin"
-        url: /categories/kotlin/
-      - title: "Go"
-        url: /categories/go/
       - title: "C++"
         url: /categories/cpp/
   - title: "Reviews"
     url: /reviews
     children:
+      - title: "Book"
+        url: /reviews/book/
       - title: "9oormthon Training"
         url: /reviews/groomthon/
