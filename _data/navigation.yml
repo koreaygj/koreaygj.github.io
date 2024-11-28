@@ -5,7 +5,7 @@ main:
   - title: "Category"
     url: /categories-grid/
   - title: "Tags"
-    url: /tags/
+    url: /tags-grid/
   - title: "Search"
     url: "/search/"
 
