@@ -17,6 +17,9 @@ docs:
         url: /algorithm/baekjoon/
       - title: "Programmers"
         url: /algorithm/programmers/
+  - title: "Auto-drive"
+    url: /auto_drive/
+    children:
   - title: "CS"
     url: /categories/CS/
     children:
