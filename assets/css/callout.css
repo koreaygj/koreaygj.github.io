@@ -1,247 +1,90 @@
-/* 색상 변수 정의 */
-:root {
-  --callout-border-color: #30363d;
-  --callout-background-color: #2d333b;
-  --callout-text-color: #c9d1d9;
-  --callout-header-background-color: #0d1117;
-  --callout-content-background-color: #161b22;
-
-  --callout-note-color: #58a6ff;
-  --callout-abstract-color: #34d058;
-  --callout-info-color: #79b8ff;
-  --callout-todo-color: #2d9cdb;
-  --callout-tip-color: #34d058;
-  --callout-success-color: #28a745;
-  --callout-question-color: #ffab70;
-  --callout-warning-color: #f4d67c;
-  --callout-failure-color: #ff6a6a;
-  --callout-danger-color: #ff6a6a;
-  --callout-bug-color: #ff6a6a;
-  --callout-example-color: #d2a8ff;
-  --callout-quote-color: #8b949e;
+/* 패딩과 마진도 약간 조정 */
+.markdown-callout {
+  border-radius: 4px;
+  margin: 1rem 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid;
 }
 
-/* 기본 Callout 스타일 */
-.callout {
-  border: 1px solid var(--callout-border-color);
-  margin: 20px 0;
-  border-radius: 5px;
-  background-color: var(--callout-background-color);
-  color: var(--callout-text-color);
-  position: relative;
-  font-family: Arial, sans-serif;
+/* 다크 모드 지원 */
+@media (prefers-color-scheme: dark) {
+  .markdown-callout {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
 }
 
-/* 상단 바 스타일 */
-.callout-header {
+.markdown-callout .callout-title {
+  font-weight: 600;
+  padding: 5px 15px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: var(--callout-header-background-color);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  font-weight: bold;
+  font-size: 0.90rem; /* 글씨 크기 줄임 */
 }
 
-/* 제목 스타일 */
-.callout-header strong {
-  font-size: 1.1em;
+.markdown-callout .callout-icon {
+  margin-right: 5px;
 }
 
-/* 아이콘 스타일 */
-.callout-header .icon {
-  font-size: 1.2em;
+.markdown-callout .callout-content {
+  padding: 0 15px 10px;
 }
 
-/* 내용 스타일 */
-.callout-content {
-  padding: 10px 20px; /* 본문에도 패딩 적용 */
-  background-color: var(--callout-content-background-color);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  font-size: 16px;
+.markdown-callout .callout-content > p:first-child {
+  margin-top: 0;
 }
 
-/* 각 callout 스타일 */
-.callout-note {
-  border-color: var(--callout-note-color);
+.markdown-callout .callout-content > p:last-child {
+  margin-bottom: 0;
 }
 
-.callout-note .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-note-color); /* 점선 색상 */
+/* 노트 스타일 */
+.markdown-callout-note {
+  border-color: #448aff;
 }
 
-.callout-note .callout-header strong,
-.callout-note .callout-header .icon {
-  color: var(--callout-note-color);
+.markdown-callout-note .callout-title {
+  background-color: rgba(68, 138, 255, 0.1);
+  color: #448aff;
 }
 
-.callout-abstract {
-  border-color: var(--callout-abstract-color);
+/* 팁 스타일 */
+.markdown-callout-tip {
+  border-color: #00b8d4;
 }
 
-.callout-abstract .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-abstract-color); /* 점선 색상 */
+.markdown-callout-tip .callout-title {
+  background-color: rgba(0, 184, 212, 0.1);
+  color: #00b8d4;
 }
 
-.callout-abstract .callout-header strong,
-.callout-abstract .callout-header .icon {
-  color: var(--callout-abstract-color);
+/* 중요 스타일 */
+.markdown-callout-important {
+  border-color: #9c27b0;
 }
 
-.callout-info {
-  border-color: var(--callout-info-color);
+.markdown-callout-important .callout-title {
+  background-color: rgba(156, 39, 176, 0.1);
+  color: #9c27b0;
 }
 
-.callout-info .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-info-color); /* 점선 색상 */
+/* 주의 스타일 */
+.markdown-callout-warning {
+  border-color: #ff9100;
 }
 
-.callout-info .callout-header strong,
-.callout-info .callout-header .icon {
-  color: var(--callout-info-color);
+.markdown-callout-warning .callout-title {
+  background-color: rgba(255, 145, 0, 0.1);
+  color: #ff9100;
 }
 
-.callout-todo {
-  border-color: var(--callout-todo-color);
+/* 경고 스타일 */
+.markdown-callout-caution {
+  border-color: #ff5252;
 }
 
-.callout-todo .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-todo-color); /* 점선 색상 */
-}
-
-.callout-todo .callout-header strong,
-.callout-todo .callout-header .icon {
-  color: var(--callout-todo-color);
-}
-
-.callout-tip {
-  border-color: var(--callout-tip-color);
-}
-
-.callout-tip .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-tip-color); /* 점선 색상 */
-}
-
-.callout-tip .callout-header strong,
-.callout-tip .callout-header .icon {
-  color: var(--callout-tip-color);
-}
-
-.callout-success {
-  border-color: var(--callout-success-color);
-}
-
-.callout-success .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-success-color); /* 점선 색상 */
-}
-
-.callout-success .callout-header strong,
-.callout-success .callout-header .icon {
-  color: var(--callout-success-color);
-}
-
-.callout-question {
-  border-color: var(--callout-question-color);
-}
-
-.callout-question .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-question-color); /* 점선 색상 */
-}
-
-.callout-question .callout-header strong,
-.callout-question .callout-header .icon {
-  color: var(--callout-question-color);
-}
-
-.callout-warning {
-  border-color: var(--callout-warning-color);
-}
-
-.callout-warning .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-warning-color); /* 점선 색상 */
-}
-
-.callout-warning .callout-header strong,
-.callout-warning .callout-header .icon {
-  color: var(--callout-warning-color);
-}
-
-.callout-failure {
-  border-color: var(--callout-failure-color);
-}
-
-.callout-failure .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-failure-color); /* 점선 색상 */
-}
-
-.callout-failure .callout-header strong,
-.callout-failure .callout-header .icon {
-  color: var(--callout-failure-color);
-}
-
-.callout-danger {
-  border-color: var(--callout-danger-color);
-}
-
-.callout-danger .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-danger-color); /* 점선 색상 */
-}
-
-.callout-danger .callout-header strong,
-.callout-danger .callout-header .icon {
-  color: var(--callout-danger-color);
-}
-
-.callout-bug {
-  border-color: var(--callout-bug-color);
-}
-
-.callout-bug .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-bug-color); /* 점선 색상 */
-}
-
-.callout-bug .callout-header strong,
-.callout-bug .callout-header .icon {
-  color: var(--callout-bug-color);
-}
-
-.callout-example {
-  border-color: var(--callout-example-color);
-}
-
-.callout-example .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-example-color); /* 점선 색상 */
-}
-
-.callout-example .callout-header strong,
-.callout-example .callout-header .icon {
-  color: var(--callout-example-color);
-}
-
-.callout-quote {
-  border-color: var(--callout-quote-color);
-}
-
-.callout-quote .callout-header {
-  background-color: var(--callout-header-background-color);
-  border-bottom: 1px dashed var(--callout-quote-color); /* 점선 색상 */
-}
-
-.callout-quote .callout-header strong,
-.callout-quote .callout-header .icon {
-  color: var(--callout-quote-color);
+.markdown-callout-caution .callout-title {
+  background-color: rgba(255, 82, 82, 0.1);
+  color: #ff5252;
 }
