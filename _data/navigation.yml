@@ -17,9 +17,13 @@ docs:
         url: /algorithm/baekjoon/
       - title: "Programmers"
         url: /algorithm/programmers/
-  - title: "Auto-drive"
-    url: /auto_drive/
+  - title: "Autonomous Drive"
+    url: /av_tech/
     children:
+      - title: "Object detection"
+        url: /av_tech/object_detection/
+      - title: "Math"
+        url: /av_tech/math/
   - title: "CS"
     url: /categories/CS/
     children:
@@ -44,6 +48,8 @@ docs:
   - title: "Reviews"
     url: /reviews
     children:
+      - title: "Paper"
+        url: /reviews/paper/
       - title: "Book"
         url: /reviews/book/
       - title: "9oormthon Training"
