@@ -2,7 +2,7 @@
 title: "Paper review"
 layout: tag
 permalink: /reviews/paper
-taxonomy: paper_review
+taxonomy: paper
 entries_layout:
 sidebar:
   nav: "docs"

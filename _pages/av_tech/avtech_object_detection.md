@@ -1,6 +1,6 @@
 ---
 title: "Object_detection"
-layout: category
+layout: tag
 permalink: /av_tech/object_detection/
 taxonomy: object_detection
 entries_layout: 
